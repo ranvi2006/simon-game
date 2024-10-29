@@ -1,66 +1,97 @@
-*{
-    margin: 0;padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
-p{
+
+p {
     margin-top: 10px;
     margin-bottom: 20px;
 }
-.btn{
+
+.btn {
     height: 200px;
     width: 200px;
     border: 2px solid black;
     margin: 10px;
-    box-shadow: 4px 3px 2px  green;
+    box-shadow: 4px 3px 2px green;
     display: flex;
     justify-content: center;
     align-items: center;
     /* border-top-left-radius: 100%; */
 }
-.btn:active{
+
+.btn:active {
     transform: scale(1.04);
 }
-body{
+
+body {
     background-color: rgb(147, 171, 171);
+    background-color: rgba(227, 220, 220, 0.82);
 }
-.container{
-    height: 100vh;
+
+.container {
+    height: fit-content;
     display: flex;
     flex-direction: column;
-    align-items:center;
-    
+    align-items: center;
+
 
 }
 
-.red{
+.red {
     border-top-left-radius: 100%;
-background-color: #d95980;
+    background-color: #d95980;
 }
-.green{
+
+.green {
     border-top-right-radius: 100%;
-background-color: #63aac0;
+    background-color: #63aac0;
 }
-.yellow{
+
+.yellow {
     border-bottom-left-radius: 100%;
-background-color: #f99b45;
+    background-color: #f99b45;
 }
-.purple{
+
+.purple {
     border-bottom-right-radius: 100%;
-background-color: #800080;
+    background-color: #800080;
 }
-.key-ctr{
+
+.key-ctr {
     display: flex;
     /* border: 10px solid rgb(142, 28, 223); */
-    background-color:rgb(16, 174, 237);
+    background-color: rgb(16, 174, 237);
     border-radius: 50%;
-      
+
 }
 
-.gameFlash{
+.gameFlash {
     background-color: rgb(244, 242, 242);
 }
-.userFlash{
+
+.userFlash {
     background-color: rgb(0, 225, 23);
 }
-.warnFlash{
+
+.warnFlash {
     background-color: red;
+}
+
+@media (max-width: 768px) {
+    /* Styles for phone screens */
+
+    .btn {
+        height: 150px;
+        width: 150px;
+    }
+
+}
+
+.note{
+    align-self: flex-start;
+    margin-top: 2rem;
+    color:red;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
